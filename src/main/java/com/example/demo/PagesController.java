@@ -16,7 +16,7 @@ public class PagesController {
     @GetMapping("/greeting")
     public String getQueryStrings(@RequestParam String first, @RequestParam String last){
 
-        return "hello " + first + " " + last + " sending query string data";
+        return "hello " + first + " " + last + " sending query string data version 2";
     }
 
     @GetMapping("/greeting/{first}/{last}")
