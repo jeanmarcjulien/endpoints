@@ -16,7 +16,7 @@ public class PagesController {
     }
 
     @PostMapping("/set_x")
-    public String setX(@RequestParam String x){
+    public void setX(@RequestParam String x){
         x=x;
     }
 
