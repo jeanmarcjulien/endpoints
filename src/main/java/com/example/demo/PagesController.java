@@ -11,18 +11,13 @@ public class PagesController {
     String x=0;
 
     @GetMapping("/get_x")
-    public String getHello(){
-        return player1_x;
+    public String getX(){
+        return x;
     }
 
     @PostMapping("/set_x")
-    public String getFormData(@RequestParam String x){
+    public String setX(@RequestParam String x){
         x=x;
-    }
-
-    @GetMapping("/hello")
-    public String getHello(){
-        return "hello";
     }
 
     @GetMapping("/greeting")
