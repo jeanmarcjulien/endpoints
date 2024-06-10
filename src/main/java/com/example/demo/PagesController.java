@@ -8,6 +8,18 @@ import java.util.List;
 @RestController
 public class PagesController {
 
+    String x=0;
+
+    @GetMapping("/get_x")
+    public String getHello(){
+        return player1_x;
+    }
+
+    @PostMapping("/set_x")
+    public String getFormData(@RequestParam String x){
+        x=x;
+    }
+
     @GetMapping("/hello")
     public String getHello(){
         return "hello";
