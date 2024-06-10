@@ -8,7 +8,7 @@ import java.util.List;
 @RestController
 public class PagesController {
 
-    String x=0;
+    String x="0";
 
     @GetMapping("/get_x")
     public String getX(){
