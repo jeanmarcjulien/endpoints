@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
-public class XValueController {
+public class PagesController {
 
     private double xValue = 0;
 
