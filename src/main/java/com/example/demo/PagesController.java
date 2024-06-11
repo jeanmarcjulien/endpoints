@@ -8,11 +8,13 @@ public class PagesController {
 
     private double xValue = 0;
 
+    @CrossOrigin(origins = "*") // Allow any origin
     @GetMapping("/get_x")
     public XValueResponse getXValue() {
         return new XValueResponse(xValue);
     }
 
+    @CrossOrigin(origins = "*") // Allow any origin
     @PostMapping("/set_x")
     public MessageResponse setXValue(@RequestBody XValueRequest request) {
         this.xValue = request.getX();
